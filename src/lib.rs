@@ -99,6 +99,8 @@ pub mod par;
 #[cfg(feature = "snappy")]
 pub mod snap;
 pub mod syncz;
+#[cfg(feature = "zstd")]
+pub mod zstd;
 
 /// 128 KB default buffer size, same as pigz.
 pub const BUFSIZE: usize = 64 * (1 << 10) * 2;
